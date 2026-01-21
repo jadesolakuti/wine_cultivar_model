@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wine Cultivar Prediction</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+            border-radius: 8px;
+        }
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Wine Cultivar Predictor</h2>
+
+    <form method="POST">
+        <input name="alcohol" placeholder="Alcohol" required>
+        <input name="malic_acid" placeholder="Malic Acid" required>
+        <input name="total_phenols" placeholder="Total Phenols" required>
+        <input name="flavanoids" placeholder="Flavanoids" required>
+        <input name="color_intensity" placeholder="Color Intensity" required>
+        <input name="proline" placeholder="Proline" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Prediction: {{ prediction }}</h3>
+    {% endif %}
+</div>
+
+</body>
+</html>
