@@ -1,0 +1,6 @@
+Name: YOUR NAME
+Matric Number: 22CD032158
+Machine Learning Algorithm Used: Support Vector Machine (SVM)
+Model Persistence Method Used: Joblib
+Live URL of Hosted Application: https://wine-cultivar-model.onrender.com
+GitHub Repository Link: https://github.com/jadesolakuti/wine_cultivar_model
